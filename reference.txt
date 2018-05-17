@@ -1,0 +1,60 @@
+;Emanuel Zapata
+;CSCI 2333 - Assembly Language
+;Homework 2
+;Description: reads in digits and performs arithmatetic on them.
+TITLE PROG2
+INCLUDE Irvine32.inc
+
+.data
+	numberRequest BYTE "Enter a number: ", 0dh, 0ah, 0
+	;array DWORD 10 DUP(?) ;array declaration example
+	;pointer DWORD array   ;pointer reference
+	
+.code
+main PROC
+	;set up the start of the loop
+	mov edx, OFFSET mainMessage	;mov main message into edx for display
+	call WriteString	;display string
+	mov ecx, LENGTHOF array	;move length of array(10) into ecx as counter
+	mov esi, pointer	;mov pointer into esi 
+
+	;read in integers
+	READ:
+		call ReadInt	;read in integer
+		mov [esi], eax	;mov integer that was read in into esi at current location
+		add esi, 4	;increment esi by 4 for looping
+	LOOP READ
+
+	;reset values for loop
+	;mov ecx, LENGTHOF array	;mov lengthof array into ecx for reseting
+	mov esi, pointer	;mov pointer into ecx
+	mov eax, 0	;mov 0 into eax for resetting sum
+
+	;perform addition
+	ADDITION:
+		add eax, [esi]	;add esi at current location into eax which is 0 at start for running total
+		add esi, 4	;increment counter by 4(1)
+	LOOP ADDITION
+
+	;display sum
+	mov edx, OFFSET sumMessage	;mov sumMessage into edx using offest
+	call WriteString	;writestring
+	call WriteInt	;write int from running total from eax
+	mov sum, eax	;store eax into sum just in case
+	
+	;perform division
+	mov edx, 0	;mov 0 into edx to clear it
+	mov eax, sum	;mov sum into eax 
+	mov ecx, LENGTHOF array	;mov lengthof array into ecx 
+	div ecx	;divide eax/ecx
+
+	;display averageMessage and average
+	call CRLF ;print newline
+	mov edx, OFFSET averageMessage	;mov message into edx
+	call WriteString	;call write string to print string
+	call WriteInt	;write int which is average from division in eax
+	call CRLF	;print newline
+	invoke ExitProcess,0
+main ENDP
+END main
+

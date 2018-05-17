@@ -1,0 +1,14 @@
+﻿Build started 10/12/2017 11:39:10 PM.
+     1>Project "J:\School\Fall 2017\CSCI 2333 - Computer Organization & Assembly Language\PROG2 - Copy\PROG2\PROG2.vcxproj" on node 2 (Build target(s)).
+     1>_MASM:
+         Assembling PROG2-pointer.asm...
+         cmd.exe /C "C:\Users\Emanuel\AppData\Local\Temp\tmp269b94694d1d40c187ab01405f7e1820.cmd"
+         ml.exe /c /nologo /Zi /Fo"Debug\PROG2-pointer.obj" /Fl".lst" /I "c:\Irvine" /W3 /errorReport:prompt  /Ta"PROG2-pointer.asm"
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"J:\School\Fall 2017\CSCI 2333 - Computer Organization & Assembly Language\PROG2 - Copy\Debug\PROG2.exe" /INCREMENTAL /NOLOGO /LIBPATH:c:\Irvine irvine32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"J:\School\Fall 2017\CSCI 2333 - Computer Organization & Assembly Language\PROG2 - Copy\Debug\PROG2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"J:\School\Fall 2017\CSCI 2333 - Computer Organization & Assembly Language\PROG2 - Copy\Debug\PROG2.lib" /MACHINE:X86 /SAFESEH:NO "Debug\PROG2-pointer.obj"
+         PROG2.vcxproj -> J:\School\Fall 2017\CSCI 2333 - Computer Organization & Assembly Language\PROG2 - Copy\Debug\PROG2.exe
+     1>Done Building Project "J:\School\Fall 2017\CSCI 2333 - Computer Organization & Assembly Language\PROG2 - Copy\PROG2\PROG2.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.30

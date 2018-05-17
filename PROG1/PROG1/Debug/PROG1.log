@@ -1,0 +1,14 @@
+﻿Build started 10/12/2017 9:33:33 PM.
+     1>Project "J:\School\Fall 2017\CSCI 2333 - Computer Organization & Assembly Language\PROG1\PROG1\PROG1.vcxproj" on node 2 (Build target(s)).
+     1>_MASM:
+         Assembling PROG1.asm...
+         cmd.exe /C "C:\Users\Emanuel\AppData\Local\Temp\tmp1d670e8022fc455eb384af368fb79da4.cmd"
+         ml.exe /c /nologo /Zi /Fo"Debug\PROG1.obj" /Fl".lst" /I "c:\Irvine" /W3 /errorReport:prompt  /TaPROG1.asm
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"J:\School\Fall 2017\CSCI 2333 - Computer Organization & Assembly Language\PROG1\Debug\PROG1.exe" /INCREMENTAL /NOLOGO /LIBPATH:c:\Irvine irvine32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"J:\School\Fall 2017\CSCI 2333 - Computer Organization & Assembly Language\PROG1\Debug\PROG1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"J:\School\Fall 2017\CSCI 2333 - Computer Organization & Assembly Language\PROG1\Debug\PROG1.lib" /MACHINE:X86 /SAFESEH:NO Debug\PROG1.obj
+         PROG1.vcxproj -> J:\School\Fall 2017\CSCI 2333 - Computer Organization & Assembly Language\PROG1\Debug\PROG1.exe
+     1>Done Building Project "J:\School\Fall 2017\CSCI 2333 - Computer Organization & Assembly Language\PROG1\PROG1\PROG1.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.29
